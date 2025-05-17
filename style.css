@@ -181,20 +181,17 @@ body{
     font-size: 1rem;
     margin: 0 60px;
 }
-.planContainer{
+.planContainer, .investmentPlanContainer{
     display: flex;
     gap: 5px;
     justify-content: center;
     align-items: center;
-    padding: 40px;
+    margin:2rem 10rem;
 
 }
 .plan1{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
     
 
 }
@@ -204,9 +201,82 @@ body{
     justify-content: center;
     gap: 10px;
     background-color:hsl(220, 100%, 11%) ;
-    width: 70%;
-    padding: 0px 60px;
-    border-radius: 5px;
+    padding: 20px;
     margin: 10px;
+    border-radius: 5px;
+    transition: border 0.5s ease;
+}
+.expert:hover{
+    border:0.5px solid hsl(0, 100%, 50%) ;
+}
+.investmentPlanContainer{
+    gap: 2rem;
+}
+.investmentPlan{
+    /* color: hsla(34, 78%, 91%, 0.77); */
+    background-color:hsl(220, 100%, 11%) ;
+    width: 20%;
+    height: 20rem;
+    padding: 2rem;
+    font-weight: lighter;
+    border-radius: 5px;
+}
+.amount{
+    color: hsl(0, 100%, 50%) ;
+   
+}
+span{
+    font-size: 8px;
+    
+}
+.investmentPlan button{
+    background-color: lime;
+    border: none;
+    border-radius: 5px;
+    color: hsla(34, 78%, 91%, 0.77);
+}
+button.invest{
+    color: hsla(34, 78%, 91%, 0.77);
+    border: 0.5px solid hsl(0, 100%, 50%);
+    background-color: hsl(220, 100%, 11%);
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.poscontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.posImg{
+    background-image: url(images/pos.jpg);
+    background-size: cover;
+    /* position: fixed; */
+    background-position: center;
+    width: 45%;
+    height: 60vh;
+    text-align: center;
+    justify-content: center;
+}
+#play{
+    color: hsl(0, 100%, 50%);
+    background-color:hsla(34, 78%, 91%, 0.77) ;
+    border:none;
+    margin-top: 30%;
+    /* align-items: center; */
+    /* font-size: 3rem; */
+    border-radius: 50%;
+    padding: 25px 30px;
+    transition: background-color 0.5s ease;
+    transition: 0.5s ease;
 
+}
+#play:hover{
+    background-color: hsl(0, 100%, 50%);
+    color: hsl(0, 100%, 50%) ;
+}
+.posRegister{
+    width: 45%;
+    height: 60vh;
+    background-color:  hsl(0, 100%, 50%);
+    color: hsl(0, 100%, 50%) ;
 }
