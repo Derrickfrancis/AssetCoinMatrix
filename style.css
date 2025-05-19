@@ -417,24 +417,26 @@ button.invest:hover {
     display: flex;
 }
 
-.dollarIcon{
+.dollarIcon {
     display: flex;
     justify-content: center;
     text-align: center;
     padding: 20px 12px;
-    
+
 }
-.dollarIcon button{
-    background-color:hsl(220, 100%, 11%) ;
-    border: 0.5px solid  hsl(0, 100%, 50%);
+
+.dollarIcon button {
+    background-color: hsl(220, 100%, 11%);
+    border: 0.5px solid hsl(0, 100%, 50%);
     border-radius: 100%;
     padding: 15px;
 }
-#dollar{
+
+#dollar {
     font-weight: bolder;
     font-size: 1rem;
     color: white;
-     
+
 }
 
 .ten {
@@ -442,11 +444,59 @@ button.invest:hover {
     font-size: 15px;
 }
 
-.side{
+.side {
     display: flex;
-    flex-direction:column ;
+    flex-direction: column;
 }
-.leftInstant, .rightInstant{
+
+.leftInstant,
+.rightInstant {
     display: flex;
     flex-direction: row;
 }
+
+.testimonial {
+    background-color: hsl(220, 100%, 11%);
+}
+
+.dropdownContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(220, 100%, 11%);
+
+}
+
+.dropdownText {
+    display: flex;
+    margin: 0.8rem 10%;
+    padding: 1rem 3rem;
+    background-color: hsl(220, 100%, 15%);
+    border: none;
+    border-radius: 5px;
+
+}
+
+.dropdownBtn {
+    margin-left: auto;
+    background-color: hsl(220, 100%, 15%);
+    border: none;
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+    width: 7px;
+}
+
+.dropdownContent {
+    margin-top: -2.5rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 1rem 3rem;
+    background-color: hsl(220, 100%, 15%);
+    border-top: 0.5px solid red;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
