@@ -31,7 +31,9 @@
 
 
     <!-- -----------------background image section----------------------- -->
-    <div class="backImg">
+   <section id="Home">
+
+     <div class="backImg">
         <h1>BEST INVESTMENTS <br> PLANS FOR WORLDWIDE</h1>
         <h5>Put your investing ideas into actions with full range of investments,
             Enjoy real benefits <br> and rewards on your accrue investing</h5>
@@ -56,8 +58,9 @@
             <p>Countries supported</p>
         </div>
     </div>
+   </section>
 
-    <div class="about">
+    <div class="about" id="about">
         <h4>About Us</h4>
         <h2>Welcome To AssetCoinMatrix</h2>
     </div>
@@ -95,7 +98,7 @@
 
     <!-- --------------------plan Section------------------------- -->
 
-    <section class="planContainer">
+    <section class="planContainer" id="Plan">
         <div class="plan1">
             <div class="expert">
                 <button><i class="fa-solid fa-gear fa-shake"></i></button>
@@ -243,7 +246,7 @@
 
     <!-- -------------------------Testimonial Section ------------------------------ -->
 
-    <div class="testimonial">
+    <div class="testimonial" id="Faq">
         <h4>TESTIMONIAL</h4>
         <h2>Check Our Clients Feedback</h2>
         <p>Some feedback from our happy investors</p>
@@ -253,10 +256,12 @@
         <div class="newsLetter">
             <h1>Join Our Newsletter</h1>
             <h6>Put your investing ideas into action with full investment</h6>
-            <div class="inputGroup">
-                <input type="email" placeholder="Email Address" class="email">
-                <button class="subscribe">Subscribe</button>
+           <form action="" method="post">
+             <div class="inputGroup">
+                <input type="email" placeholder="Email Address" class="email" required>
+                <button class="subscribe" type="submit">Subscribe</button>
             </div>
+           </form>
         </div>
 
         <div class="refferral">
@@ -393,38 +398,47 @@
     <div class="footer">
         <div class="asset">
             <h1>
-                <span class="assetlogo"><img src="images/trend.jpg" alt="" style="width: 64px;height: 64px;"></span>AssetCoinMatrix
+                <span class="assetlogo">
+                    <img src="images/trend.jpg" alt="">
+                </span>
+                <span class="assettext">AssetCoinMatrix</span>
             </h1>
-            <p>investing and trading made simple, affordable and accessible for you.</p>
+            <p>Investing and trading made simple, affordable and accessible for you.</p>
         </div>
 
         <div class="useful">
-            <h1>
-                Useful links
-            </h1>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-            </ul>
+            <div>
+                <h1>
+                    Useful links
+                </h1>
+            </div>
+            <div>
+                <ul class="usefulUl">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#Plan">Blog</a></li>
+                    <li><a href="#Faq">FAQ</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
         </div>
 
         <div class="contact">
             <h1>Contact</h1>
             <figure>
-                <i class="fa-solid fa-phone"></i><a href="tell"> +2349028323536</a>
+                <i class="fa-solid fa-phone"></i><a href="tell"> +2349028323536</a><br>
                 <i class="fa-solid fa-envelope"></i> <a href="email">Support@assetcoinmatrix.com</a>
                 <i class="fa-solid fa-location-dot"></i> <a href="#location">Nijmegen, Netherland</a>
             </figure>
         </div>
     </div>
 
-
-
-
+    <footer>
+        <p>
+            Copyright ©️ 2024 AssetCoinMatrix All Right Reserved
+        </p>
+    </footer>
     <script src="index.js"></script>
 </body>
 

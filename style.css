@@ -529,15 +529,67 @@ button.invest:hover {
     background-color: hsl(220, 100%, 17%);
 
 }
-.asset{
-
+.asset ,.useful{
+     
+    /* min-width: 600px; */
+    max-width: 3000px;
+    min-height: 30vh;
+    /* border: 1px solid white; */
+    line-height: 3rem;
 }
 .assetlogo{
-    /* display: inline; */
     float: left;
-    margin-right: 1rem;
+    margin-right: 3px;
 }
-.asset h1{
-    font-size: 3rem;
-    font-weight: bolder;
+.assetlogo img{
+    width: 32px;
+    height: 32px;
+    display: block;
+}
+.assettext{
+    font-size:2rem;
+}
+.asset p{
+    margin-left: 5rem;
+}
+.useful{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+ line-height: 1.6rem;
+
+}
+.usefulUl li{
+    display: inline-block;
+    margin-inline: 10px;
+    padding: 1rem;
+}
+.usefulUl a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.usefulUl a:hover{
+    color: hsl(0, 100%, 40%);
+}
+.usefulUl a:active{
+     color: hsl(0, 100%, 50%);
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+}
+figure a{
+    text-decoration: none;
+    padding: 1px;
+    color: whitesmoke;
+}
+footer{
+background-color: hsl(230, 100%, 17%);
+    color: whitesmoke;
+    text-align: center;
+    padding: 5rem;
 }
