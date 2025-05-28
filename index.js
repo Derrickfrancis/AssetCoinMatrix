@@ -1,19 +1,30 @@
 
+const buttons = document.querySelectorAll('.dropdownBtn');
 
-let dropdownBtn = document.getElementById('dropdownBtn');
-let dropdownContent = document.getElementById('content');
+buttons.forEach(button => {
+    button.onclick = () => {
+        const parent = button.closest('.dropdownText');
+        const content = parent.querySelector('.dropdownContent');
+        content.style.display = content.style.display === 'none'? 'block' : 'none'
+    
+        
+        const isVisible = getComputedStyle(content).display !== 'none'
 
-dropdownBtn.onclick = function(){
-    if(dropdownContent.style.display === 'none'){
-        dropdownContent.style.display = 'block'
-       dropdownBtn.style.color = ' hsl(0, 44.30%, 40%)'
-    //    dropdownBtn.textContent =  '\u2304' 
-
-    }
-    else{
-        dropdownContent.style.display = 'none'
-        dropdownBtn.style.color = 'hsla(34, 78%, 91%, 0.83)'
-        // dropdownBtn.textContent = '\u203a';
+        if(isVisible){
+            content.classList.add('hidden');
+            button.textContent = '\u25BC'
+            button.style.color = 'red';
+          
+        }
+        else{
+            content.classList.remove('hidden');
+            button.textContent = '\u25B6';
+            button.style.color = 'white'
+           
+        }
         
     }
-}
+})
+
+
+
